@@ -1,2 +1,2 @@
 ## 🖼️ Preview
-![UI Preview](Screenshot/ScreenshotApp)
+![UI Preview](Screenshot/ScreenshotApp.jpg)
