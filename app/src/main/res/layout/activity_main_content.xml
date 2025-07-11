@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6A8D7"
+    tools:context=".main_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_profile_pic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ellips12"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/ellips12"
+            android:contentDescription="Profile Picture" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nanaciciya"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toTopOf="@+id/img_profile_pic"
+            app:layout_constraintStart_toEndOf="@+id/img_profile_pic" />
+
+        <TextView
+            android:id="@+id/tv_user_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID: 1524367890"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_user_name"
+            app:layout_constraintStart_toStartOf="@+id/tv_user_name" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/img_product_gallery"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/image13"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@+id/header_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_dots_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="● ● ● ● ●"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/img_product_gallery"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_neutral_tone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Neutral Tone"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_dots_indicator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="People with a neutral undertone often find that they can wear a wide range of colors without them clashing with their skin."
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_neutral_tone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/menu_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout style="@style/menu_item_style">
+            <ImageView style="@style/menu_icon_style" android:contentDescription="Blush On Icon"/>
+            <TextView style="@style/menu_text_style" android:text="Blush On"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/menu_item_style">
+            <ImageView style="@style/menu_icon_style" android:contentDescription="Eyeliner Icon"/>
+            <TextView style="@style/menu_text_style" android:text="Eyeliner"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/menu_item_style">
+            <ImageView style="@style/menu_icon_style" android:contentDescription="Lippies Icon"/>
+            <TextView style="@style/menu_text_style" android:text="Lippies"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/menu_item_style">
+            <ImageView style="@style/menu_icon_style" android:contentDescription="Eyeshadow Icon"/>
+            <TextView style="@style/menu_text_style" android:text="Eyeshadow"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_decorative_flower"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/gambar3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="Decorative flower" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

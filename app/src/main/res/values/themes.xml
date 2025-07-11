@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+        <style name="menu_item_style">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:orientation">horizontal</item>
+            <item name="android:layout_marginTop">16dp</item>
+            <item name="android:gravity">center_vertical</item>
+        </style>
+
+        <style name="menu_icon_style">
+            <item name="android:layout_width">40dp</item>
+            <item name="android:layout_height">40dp</item>
+            <item name="android:layout_marginEnd">16dp</item>
+            <item name="android:background">@drawable/ellips13</item>
+            <item name="android:src">@drawable/ellipse8</item>
+        </style>
+
+        <style name="menu_text_style">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:textSize">18sp</item>
+            <item name="android:textColor">#FFFFFF</item>
+        </style>
+        <style name="Theme.Tugas2" parent="Theme.AppCompat.Light.NoActionBar">
+        </style>
+    </resources>
